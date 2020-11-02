@@ -1,4 +1,4 @@
-# ab
+# ab - Apache HTTP server benchmarking tool
 
 ## 正式名称
 
