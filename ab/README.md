@@ -47,5 +47,42 @@ ulimit -n 1024
 ```
 ulimit -a
 ```
+```
+### Ex.
 
-WIP
+# ulimit -a | grep files
+open files                      (-n) 1024
+```
+
++ `fs.nr_open` 1プロセスが開ける上限の確認
+
+```
+sysctl fs.nr_open
+```
+```
+### Ex.
+
+# sysctl fs.nr_open
+fs.nr_open = 1048576
+```
+
++ `fs.file-max` システム全体の上限の確認
+
+```
+sysctl fs.file-max
+```
+
++ ファイルディスクリプタの設定値を `1プロセスが開ける上限` まで増やす
+
+```
+ulimit -n 1048576
+```
+```
+# ulimit -a | grep files
+open files                      (-n) 1048576
+```
+
+
+## 参考
+
+https://qiita.com/takc923/items/238597a53a2328025b09
