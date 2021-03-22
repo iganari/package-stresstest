@@ -13,8 +13,8 @@ https://httpd.apache.org/docs/2.4/programs/ab.html
 + Ubuntu
 
 ```
-apt update
-apt install apache2-utils
+sudo apt update
+sudo apt install apache2-utils
 ```
 
 ## 基本的な使い方
