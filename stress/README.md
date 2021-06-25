@@ -26,7 +26,11 @@ apk add stress-ng
 + stressコマンド実行
 
 ```
+### プロセス 1 個
 stress -c 1 -q &
+
+### プロセス 2 個
+stress -c 2 -q &
 ```
 ```
 ### Ex.
