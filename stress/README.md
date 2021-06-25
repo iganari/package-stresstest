@@ -9,6 +9,13 @@ apt update
 apt install stress
 ```
 
++ Alpine
+
+```
+apk update
+apk add stress-ng
+```
+
 ## 使い方
 
 + `-q`
