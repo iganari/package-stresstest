@@ -82,6 +82,14 @@ ulimit -n 1048576
 open files                      (-n) 1048576
 ```
 
+## Docker を使用した簡易実行基盤
+
+
+```
+docker run --rm -it httpd:2.4.48-alpine /bin/sh
+```
+
+
 
 ## 参考
 
