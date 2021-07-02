@@ -10,11 +10,17 @@ https://httpd.apache.org/docs/2.4/programs/ab.html
 
 ## インストール方法
 
-+ Ubuntu
++ Ubuntu Server がある場合
 
 ```
 sudo apt update
 sudo apt install apache2-utils
+```
+
++ docker コマンドが使える場合
+
+```
+docker run --rm -it httpd:2.4.48-alpine /bin/sh
 ```
 
 ## 基本的な使い方
@@ -81,6 +87,7 @@ ulimit -n 1048576
 # ulimit -a | grep files
 open files                      (-n) 1048576
 ```
+
 
 
 ## 参考
